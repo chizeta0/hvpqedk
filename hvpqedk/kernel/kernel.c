@@ -8,7 +8,7 @@ static struct PyModuleDef hvpqedk_mod = {
     "hvpqedk",
     NULL,
     -1,
-    Ktilde_methods
+    hvpqedk_kernel_methods
 };
 
 PyMODINIT_FUNC PyInit_hvpqedk(void)

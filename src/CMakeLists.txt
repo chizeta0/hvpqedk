@@ -15,3 +15,4 @@ add_library(hvpqedk SHARED
 set_target_properties(hvpqedk PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
 
 install(TARGETS hvpqedk LIBRARY DESTINATION ${INSTALL_PATH}/lib)
+install(DIRECTORY ./ DESTINATION ${INSTALL_PATH}/include/hvpqedk FILES_MATCHING PATTERN "*.h")
