@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-import Cython.Build
+#import Cython.Build
+import setuptools
 from distutils.core import setup, Extension
 import sysconfig
 import subprocess
@@ -17,7 +18,7 @@ extra_compile_args = sysconfig.get_config_var('CFLAGS').split()
 extension_args = dict(
     language = 'c',
     include_dirs = inc_dirs,
-    libraries = [libname],
+    libraries = [],
     library_dirs = lib_dirs,
     extra_compile_args = extra_compile_args,
 )
