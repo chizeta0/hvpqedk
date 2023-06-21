@@ -1,0 +1,17 @@
+
+set(hvpqedk_SOURCES
+  ${CMAKE_SOURCE_DIR}/src/kernel.c
+  )
+
+add_library(hvpqedk_obj
+  ${hvpqedk_SOURCES}
+  )
+
+set_target_properties(hvpqedk_obj PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
+
+add_library(hvpqedk SHARED
+  $<TARGET_OBJECTS:hvpqedk_obj>
+  )
+set_target_properties(hvpqedk PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
+
+install(TARGETS hvpqedk LIBRARY DESTINATION ${INSTALL_PATH}/lib)

@@ -1,0 +1,7 @@
+.eggs/
+build/
+install/
+*.egg-info/
+*.so
+*/build/
+*/install/
