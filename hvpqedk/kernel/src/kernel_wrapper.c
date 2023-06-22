@@ -56,15 +56,24 @@ PyObject* mu2_ft_large_wrapper(PyObject* self, PyObject* args, PyObject* kwds)
     return PyFloat_FromDouble(ret);
 }
 
+PyDoc_STRVAR(hvpqedk_Ktilde_doc,
+	     "Ktilde($module, t, m_mu, /)\n--\n\n"
+	     "Calculate Ktilde according to arXiv:1705.01775 using expansions of ftilde, see eqs (58), (60)");
+PyDoc_STRVAR(hvpqedk_mu2_ft_doc,
+	     "mu2_ft($module, t, m_mu, /)\n--\n\n"
+	     "Calculate f tilde according to arXiv:1705.01775 using expansions (58) or (60)");
+PyDoc_STRVAR(hvpqedk_mu2_ft_small_doc,
+	     "mu2_ft_small($module, t_hat, /)\n--\n\n"
+	     "Calculate expansion of ftilde according to arXiv:1705.01775, eq (58)");
+PyDoc_STRVAR(hvpqedk_mu2_ft_large_doc,
+	     "mu2_ft_large($module, t_hat, /)\n--\n\n"
+	     "Calculate expansion of ftilde according to arXiv:1705.01775, eq (60)");
+
 PyMethodDef hvpqedk_kernel_methods[] = {
-    { "Ktilde", Ktilde_wrapper, METH_VARARGS| METH_KEYWORDS,
-      "Calculate Ktilde according to arXiv:1705.01775 using expansions of ftilde, see eqs (58), (60)" },
-    { "mu2_ft", mu2_ft_wrapper, METH_VARARGS| METH_KEYWORDS,
-      "Calculate f tilde according to arXiv:1705.01775 using expansions (58) or (60)" },
-    { "mu2_ft_small", mu2_ft_small_wrapper, METH_VARARGS| METH_KEYWORDS,
-      "Calculate expansion of ftilde according to arXiv:1705.01775, eq (58)" },
-    { "mu2_ft_large", mu2_ft_large_wrapper, METH_VARARGS| METH_KEYWORDS,
-      "Calculate expansion of ftilde according to arXiv:1705.01775, eq (60)" },
+    { "Ktilde", Ktilde_wrapper, METH_VARARGS| METH_KEYWORDS, hvpqedk_Ktilde_doc },
+    { "mu2_ft", mu2_ft_wrapper, METH_VARARGS| METH_KEYWORDS, hvpqedk_mu2_ft_doc },
+    { "mu2_ft_small", mu2_ft_small_wrapper, METH_VARARGS| METH_KEYWORDS, hvpqedk_mu2_ft_small_doc },
+    { "mu2_ft_large", mu2_ft_large_wrapper, METH_VARARGS| METH_KEYWORDS, hvpqedk_mu2_ft_large_doc },
     { NULL, NULL, 0, NULL }
 };
 
