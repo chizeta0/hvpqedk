@@ -9,9 +9,9 @@ extern "C" {
 #include "kernel.h"
 }
 
-#define SPACING 0.08186
-#define M_MU_MEV 105.6583755
-#define UNIT_MEV_FM 197.3270
+#define SPACING 0.0818551850
+#define M_MU_MEV 105.658374
+#define UNIT_MEV_FM 197.327
 
 namespace
 {
@@ -76,7 +76,7 @@ namespace
     {
 	for(size_t i = 0; i != values.size(); ++i){
 	    const double x = Ktilde(static_cast<double>(i),m_mu);
-	    EXPECT_NEAR( x, values[i], 4e-3 * x );
+	    EXPECT_NEAR( x, values[i], 1e-8 * x );
 	}
     }
 }
