@@ -1,3 +1,4 @@
+#!/bin/python3
 
 # This is the pure python implementation of the functions Ktilde, mu2_ft, mu2_ft_small, and mu2_ft_large
 # which are also implemented in C (src/kernel.c)
@@ -45,6 +46,7 @@ def mu2_ft_large(th):
     pi2 = math.pi*math.pi
     th2 = th*th
     lnthg = math.log(th) + GAMMA_E
+    pre = math.sqrt(math.pi/th) * math.exp(-2.*th);
     thx1 = (1./th - 0.7)
     thx2 = thx1*thx1
     thx3 = thx2*thx1
@@ -52,7 +54,7 @@ def mu2_ft_large(th):
     thx5 = thx4*thx1
     thx6 = thx5*thx1
 
-    a = th2 - 2.*PI*th + 2.*(4.*lnthg-1.) + 4./th2
+    a = th2 - 2.*math.pi*th + 2.*(4.*lnthg-1.) + 4./th2
     b = 0.0197159*thx6 - 0.0284086*thx5 + 0.0470604*thx4 - 0.107632*thx3 + 0.688813*thx2 + 4.71371*thx1 + 3.90388
 
     return 2*pi2*( a - pre*b )
