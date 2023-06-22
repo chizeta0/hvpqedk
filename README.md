@@ -24,7 +24,7 @@ in your source code and adding the compile flag `-lhvpqedk`. It might be neccess
 
 ## Python3
 
-It is recommended to install the library with pip in a virtual environment:
+You can install the module or just copy the py source in `py-src/kernel.py` into your own project. If you want to install and use the module, it is recommended to do so using pip within a virtual environment:
 
 ```bash
 pip install -e .
