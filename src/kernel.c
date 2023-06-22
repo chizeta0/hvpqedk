@@ -16,6 +16,9 @@ double Ktilde(const double t, const double m_mu)
 double mu2_ft(const double t, const double m_mu)
 {
     const double that = t * m_mu;
+    if(that == 0){
+	return 0.;
+    }
     if(that < EXPANSION_THRESHOLD){
 	return mu2_ft_small(that);
     }
