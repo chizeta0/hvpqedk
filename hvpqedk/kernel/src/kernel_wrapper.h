@@ -1,4 +1,14 @@
 
+/*************************************************************************************
+ *  File: kernel_wrapper.h
+ *  Copyright (c) 2023 Christian Zimmermann. All rights reserved
+ *
+ *************************************************************************************
+ *
+ *  Python wrappers for hvpqedk kernel functions
+ *
+ *************************************************************************************/
+
 #ifndef __python_hvpqedk_kernel_wrapper_h__
 #define __python_hvpqedk_kernel_wrapper_h__
 

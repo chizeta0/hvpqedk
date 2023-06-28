@@ -1,4 +1,10 @@
 
+/*************************************************************************************
+ *  File: kernel_test.cc
+ *  Copyright (c) 2023 Christian Zimmermann. All rights reserved
+ *
+ *************************************************************************************/
+
 #include <cstdlib>
 #include <vector>
 #include <string>

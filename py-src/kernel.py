@@ -1,5 +1,8 @@
 #!/bin/python3
 
+# File: kernel.py
+# Copyright (c) 2023 Christian Zimmermann. All rights reserved
+
 # This is the pure python implementation of the functions Ktilde, mu2_ft, mu2_ft_small, and mu2_ft_large
 # which are also implemented in C (src/kernel.c)
 

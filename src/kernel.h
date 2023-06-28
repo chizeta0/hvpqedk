@@ -1,5 +1,9 @@
 
 /*************************************************************************************
+ *  File: kernel.h
+ *  Copyright (c) 2023 Christian Zimmermann. All rights reserved
+ *
+ *************************************************************************************
  *  Master formula for the HVP contribution to a_mu:
  *
  *  a_mu = (alpha/pi)^2 * int_0^inf dt G(t) tilde{K}(t;m_mu)

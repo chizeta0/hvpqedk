@@ -1,4 +1,10 @@
 
+/*************************************************************************************
+ *  File: kernel_wrapper.c
+ *  Copyright (c) 2023 Christian Zimmermann. All rights reserved
+ *
+ *************************************************************************************/
+
 #include "kernel_wrapper.h"
 #include "kernel.h"
 

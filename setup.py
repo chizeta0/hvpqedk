@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 
-#import Cython.Build
 import setuptools
 from distutils.core import setup, Extension
 import sysconfig
-import subprocess
 
 libname = 'hvpqedk'
 author = 'Christian Zimmermann'
