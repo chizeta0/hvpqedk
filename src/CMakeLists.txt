@@ -3,6 +3,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 
 set(hvpqedk_SOURCES
   ${CMAKE_SOURCE_DIR}/src/kernel.c
+  ${CMAKE_SOURCE_DIR}/src/rratio.c
   )
 
 add_library(hvpqedk_obj
