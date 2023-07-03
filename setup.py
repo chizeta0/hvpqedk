@@ -32,6 +32,7 @@ if __name__ == "__main__":
             'hvpqedk',
             [
                 'src/kernel.c',
+                'src/rratio.c',
                 'hvpqedk/kernel/src/kernel_wrapper.c',
                 'hvpqedk/kernel/kernel.c'
             ],

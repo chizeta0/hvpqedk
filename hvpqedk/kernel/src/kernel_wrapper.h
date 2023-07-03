@@ -18,6 +18,8 @@ extern PyObject* Ktilde_wrapper(PyObject* self, PyObject* args, PyObject* kwds);
 extern PyObject* mu2_ft_wrapper(PyObject* self, PyObject* args, PyObject* kwds);
 extern PyObject* mu2_ft_small_wrapper(PyObject* self, PyObject* args, PyObject* kwds);
 extern PyObject* mu2_ft_large_wrapper(PyObject* self, PyObject* args, PyObject* kwds);
+extern PyObject* f_BW_wrapper(PyObject* self, PyObject* args, PyObject* kwds);
+extern PyObject* Rratio_wrapper(PyObject* self, PyObject* args, PyObject* kwds);
 
 extern PyMethodDef hvpqedk_kernel_methods[];
 
